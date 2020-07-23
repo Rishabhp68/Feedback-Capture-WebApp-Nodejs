@@ -6,6 +6,7 @@ const keys = require("./config/keys");
 require("./model/User");
 require("./service/passport");
 
+console.log("-------------------", keys.mongoURI);
 mongoose.connect(keys.mongoURI);
 
 const app = express(); // create express app, in a project we need multiple express apps , set configuration for express in app
